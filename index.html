@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISS Clock</title>
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="main">
+    <content>
+      <div id="gradient"></div>
+
+      <div class="time-indicator">
+        <p id="greetingText" class="time-greeting">Good Day!</p>
+      </div>
+
+      <div class="time-icon">
+        <img src="./assets/sunIcon.png" alt="sun icon" />
+      </div>
+
+      <div id="welcome" class="welcome-text">
+        <h1 id="timeOne" class="lineOne">welcome back,</h1>
+        <h1 id="timeTwo" class="lineTwo">martian.</h1>
+      </div>
+
+      <div class="day-month">
+        <p id="currentDate">Mon, 23 May</p>
+      </div>
+
+      <div id="interactive-buttons">
+        <div id="returnButton" class="circle__left"></div>
+
+        <button id="timeButton" class="circle-button">
+          <img src="./assets/timeButton.svg" alt="time switch" />
+        </button>
+
+        <div class="circle__right"></div>
+      </div>
+    </content>
+  </body>
+</html>

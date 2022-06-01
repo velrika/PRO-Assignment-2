@@ -1,0 +1,137 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#main.night-mode {
+  background-color: #010110;
+}
+
+content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Spline Sans Mono', monospace;
+  margin-left: -261px;
+  margin-top: -72px;
+}
+
+#gradient {
+  opacity: 70%;
+  z-index: 1;
+  margin-top: 272px;
+  height: 290px;
+  width: 290px;
+  background-image: radial-gradient(circle, #ffd42d 20%, #ffffff 70%);
+}
+
+#gradient.anim {
+  transition-duration: 3s;
+  animation: 1000ms shine infinite alternate ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#gradient.dark {
+  opacity: 70%;
+  z-index: 1;
+  margin-top: 272px;
+  height: 290px;
+  width: 290px;
+  background-image: radial-gradient(
+    circle,
+    rgb(19, 5, 63),
+    rgb(47, 25, 116),
+    rgb(1, 1, 16) 70%
+  );
+}
+
+.time-indicator {
+  margin-top: -88px;
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2c2c2c;
+}
+
+.time-icon {
+  margin-top: -5px;
+  margin-left: -71px;
+}
+
+.welcome-text {
+  font-family: 'Spline Sans Mono', monospace;
+  color: #2c2c2c;
+  margin-top: 242px;
+  margin-left: -200px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  z-index: 5;
+}
+
+.day-month {
+  font-family: 'Spline Sans Mono', monospace;
+  margin-top: 444px;
+  margin-left: -247px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+#interactive-buttons {
+  margin-bottom: -654px;
+  margin-left: -115px;
+}
+
+.circle__left {
+  height: 45px;
+  width: 45px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.circle__left.dark {
+  background-color: #010110;
+  border: 1px solid #c0c0c0;
+}
+
+.circle-button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.circle-button:hover {
+  color: #000000;
+  background-color: rgb(20, 15, 29);
+}
+
+.circle__right {
+  height: 45px;
+  width: 45px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+}
